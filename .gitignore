@@ -1,0 +1,46 @@
+# ----------------------------------------------------------------------
+# Python Environment
+# ----------------------------------------------------------------------
+# Poetry's virtual environment (managed by shellHook)
+.venv/
+# Standard venv location (if you used python -m venv)
+venv/
+env/
+# Byte-compiled files
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+# Distribution / Packaging
+dist/
+build/
+*.egg-info/
+
+# ----------------------------------------------------------------------
+# IDEs and Editors
+# ----------------------------------------------------------------------
+# VS Code
+.vscode/
+# PyCharm
+.idea/
+
+# ----------------------------------------------------------------------
+# macOS Specific
+# ----------------------------------------------------------------------
+.DS_Store
+# Spotlight metadata files
+.Spotlight-V100
+# Trash folder
+.Trashes
+# Application-specific junk files
+._*
+
+# ----------------------------------------------------------------------
+# Nix Specific (DevShell & Flakes)
+# ----------------------------------------------------------------------
+# Nix lock file (usually committed, but sometimes ignored in dev shells)
+# flake.lock
+# Nix store symlinks in the local directory (if created)
+result
+# Generated build directory (if using pure Nix packaging)
+.nix-helpers/
