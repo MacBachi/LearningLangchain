@@ -44,3 +44,8 @@ build/
 result
 # Generated build directory (if using pure Nix packaging)
 .nix-helpers/
+# Umgebungsvariablen/Geheimnisse
+# Ignoriert die Datei, in der API-Schlüssel gespeichert sind
+*.env
+.env.*
+rag_data.txt
