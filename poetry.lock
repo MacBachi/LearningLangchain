@@ -1473,6 +1473,40 @@ websocket-client = ">=0.32.0,<0.40.0 || >0.40.0,<0.41.dev0 || >=0.43.dev0"
 adal = ["adal (>=1.0.2)"]
 
 [[package]]
+name = "langchain"
+version = "1.0.3"
+description = "Building applications with LLMs through composability"
+optional = false
+python-versions = "<4.0.0,>=3.10.0"
+groups = ["main"]
+files = [
+    {file = "langchain-1.0.3-py3-none-any.whl", hash = "sha256:a7d57964ed16278c991de4ab15516a81937a58c5ac7d7aadccb18431ad8179b2"},
+    {file = "langchain-1.0.3.tar.gz", hash = "sha256:f96d8d185cb8cbba9793f5c648e7d5eeec688f8e3778f700d75d89d6570ae11e"},
+]
+
+[package.dependencies]
+langchain-core = ">=1.0.0,<2.0.0"
+langgraph = ">=1.0.2,<1.1.0"
+pydantic = ">=2.7.4,<3.0.0"
+
+[package.extras]
+anthropic = ["langchain-anthropic"]
+aws = ["langchain-aws"]
+community = ["langchain-community"]
+deepseek = ["langchain-deepseek"]
+fireworks = ["langchain-fireworks"]
+google-genai = ["langchain-google-genai"]
+google-vertexai = ["langchain-google-vertexai"]
+groq = ["langchain-groq"]
+huggingface = ["langchain-huggingface"]
+mistralai = ["langchain-mistralai"]
+ollama = ["langchain-ollama"]
+openai = ["langchain-openai"]
+perplexity = ["langchain-perplexity"]
+together = ["langchain-together"]
+xai = ["langchain-xai"]
+
+[[package]]
 name = "langchain-classic"
 version = "1.0.0"
 description = "Building applications with LLMs through composability"
@@ -1571,6 +1605,24 @@ files = [
 langchain-core = ">=1.0.0,<2.0.0"
 openai = ">=1.109.1,<3.0.0"
 tiktoken = ">=0.7.0,<1.0.0"
+
+[[package]]
+name = "langchain-tavily"
+version = "0.2.12"
+description = "An integration package connecting Tavily and LangChain"
+optional = false
+python-versions = "<4.0,>=3.10"
+groups = ["main"]
+files = [
+    {file = "langchain_tavily-0.2.12-py3-none-any.whl", hash = "sha256:d243a53f60048a18b55f5a7efd5e2dcdde6a9dbc9f84c45e5f349210303e95a3"},
+    {file = "langchain_tavily-0.2.12.tar.gz", hash = "sha256:e73ef2149b7a4e751fce75c47003d04628222b12d073dae4af2dc7f58d589e30"},
+]
+
+[package.dependencies]
+aiohttp = ">=3.11.14,<4.0.0"
+langchain = ">=0.3.20,<2.0.0"
+langchain-core = ">=0.3.15,<2.0.0"
+requests = ">=2.32.3,<3.0.0"
 
 [[package]]
 name = "langchain-text-splitters"
@@ -3812,6 +3864,23 @@ mpmath = ">=1.1.0,<1.4"
 dev = ["hypothesis (>=6.70.0)", "pytest (>=7.1.0)"]
 
 [[package]]
+name = "tavily-python"
+version = "0.7.12"
+description = "Python wrapper for the Tavily API"
+optional = false
+python-versions = ">=3.6"
+groups = ["main"]
+files = [
+    {file = "tavily_python-0.7.12-py3-none-any.whl", hash = "sha256:00d09b9de3ca02ef9a994cf4e7ae43d4ec9d199f0566ba6e52cbfcbd07349bd1"},
+    {file = "tavily_python-0.7.12.tar.gz", hash = "sha256:661945bbc9284cdfbe70fb50de3951fd656bfd72e38e352481d333a36ae91f5a"},
+]
+
+[package.dependencies]
+httpx = "*"
+requests = "*"
+tiktoken = ">=0.5.1"
+
+[[package]]
 name = "tenacity"
 version = "9.1.2"
 description = "Retry code until it succeeds"
@@ -4793,4 +4862,4 @@ cffi = ["cffi (>=1.17,<2.0) ; platform_python_implementation != \"PyPy\" and pyt
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.13, <4.0"
-content-hash = "38d8789a9d3655f123dfebecee4652bc683d1ec81f830ad7c0c082c1948ef0de"
+content-hash = "df6548899424a1ee77b21f5ac239118e70286498a51626bd504e6ac1e6411e4d"
